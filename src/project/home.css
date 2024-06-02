@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    
+    padding: 0;
+}
+
+.head {
+    width: 100%;
+    height: 100vh;
+    background-image: repeating-radial-gradient(red, blue);
+}
+
+.content {
+    position: relative;
+    width: 450px;
+    height: 200px;
+    background-image: repeating-radial-gradient(white, white, gray);
+    top: 35%;
+    left: 30%;
+    border-radius: 7px;
+    transform: rotate(-5deg);
+    transform-style: preserve-3d;
+    box-shadow: 15px 15px 5px black;
+}
+.net {
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    left: 50%;
+    background-image:repeating-linear-gradient( red, black);
+transform: skewY(18deg);
+
+}
+.me {
+    position: absolute;
+    top: 85% ;
+    left: 40%;
+}
+h2 {
+    font-size: 30px;
+    color: #fff;
+animation-iteration-count: 3;
+    animation-delay: 6s;
+    animation: me 10s ease-in-out ;
+    animation-delay: 15s;
+    transform: scale(0);
+
+}
+
+@keyframes me {
+0% {
+transform: scale(0);
+}
+
+50% {
+    transform: scale(1);
+}
+
+100% {
+    transform: scale(1.5);
+
+}
+
+
+}
+.leg {
+    margin-top: -35px;
+    margin-left: 75px;
+    color: red;
+    animation: leg 15s ease-in-out;
+    transform: scale(0);
+    animation-delay: 20s;
+
+    
+}
+@keyframes leg {
+0% {
+    transform: scale(0);
+}
+100% {
+    transform: scale(1.3);
+}
+
+}
+
+.tennis {
+    padding: 10px 10px;
+    box-shadow: 5px 10px 5px rgb(36, 35, 35);
+    position: absolute;
+    left: 38%;
+    top: 15%;
+    font-weight: 900;
+    transform: scale(1);
+    font-size: 30px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: tennis alternate 7s infinite;
+    animation-delay: 3s;
+
+}
+
+@keyframes tennis {
+    10% {
+        transform: scale(0.5) skewY(-40deg);
+
+    }
+
+    50% {
+        transform: skewY(40deg) scale(0.4);
+
+    }
+
+}
+
+span {
+    color: red;
+}
+
+.ball {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    top: 34%;
+    left: 1%;
+    animation: ball 2s ease-in-out infinite;
+    background-image: repeating-linear-gradient(blue, red, blue, blue);
+}
+
+@keyframes ball {
+    70% {
+        transform: translateX(433px) rotate(360deg);
+    }
+
+
+
+    100% {
+        transform: translateX(-10px);
+    }
+
+
+}
+
+.bat {
+    top: 40%;
+    position: absolute;
+    width: 50px;
+    left: -1%;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 2px 5px 2px rgb(22, 21, 21);
+    background-image: linear-gradient(black, red);
+
+}
+
+.bat2 {
+    position: absolute;
+    top: 57%;
+    left: -2%;
+    width: 13px;
+    height: 50px;
+    border-radius: 5px;
+    transform: rotate(30deg);
+    animation: face 2s ease-in-out infinite;
+}
+
+.bat {
+    animation: bat 2s ease-in-out infinite;
+}
+
+@keyframes bat {
+    80% {
+        transform: translateX(-100px) translateY(-100px) skewY(40deg);
+
+
+    }
+
+
+
+}
+
+@keyframes face {
+    50% {}
+
+}
+
+.bat3 {
+    top: 40%;
+    position: absolute;
+    width: 50px;
+    left: 96%;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 2px 5px 2px rgb(22, 21, 21);
+    background-image: linear-gradient(black, red);
+    animation: bat3 1s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+@keyframes bat3 {
+    25% {
+        transform: skewY(-50deg);
+    }
+
+
+}

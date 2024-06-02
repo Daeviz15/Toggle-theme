@@ -1,0 +1,153 @@
+/* .card {
+  border: 1px solid rgba(49, 48, 48, 0.363);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #000;
+  max-width: 400px;
+  height: 40%;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+.image {
+  max-width: 85%;
+  height: auto;
+}
+
+.card .title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: gray;
+}
+.card .cardname {
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.student{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  padding: 10px;
+  border: 1px solid #8f8a8ae0;
+}
+
+
+
+
+h1{
+  position: absolute;
+  top: 0;
+  color: #fff;
+}
+
+input{
+margin-bottom: 30px;
+border-radius: 5px;
+border: none;
+padding: 7px 15px;
+outline: none;
+}
+input::placeholder{
+  font-size: 10px;
+}
+
+
+button{
+  margin-left: 60px;
+  padding: 7px 25px;
+  font-size: 10px;
+  border-radius: 20px;
+  border: none;
+} */
+h1{
+  text-align: center;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div{
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+form{
+  
+  width: 250px;
+  height: 300px;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 4px;
+}
+#light form{
+  background-image: linear-gradient(
+    #c754f1, #fff 
+  );
+  border: 1px solid;
+}
+#light h1{
+  color:#46045e ;
+
+}
+#dark form{
+  background-color: #00000054 ;
+
+}
+#light a{
+  box-shadow: 2px 2px 2px #bd4ee6;
+}
+input{
+  margin-top: 15px;
+
+  margin-left: 30px;
+  margin-bottom: 25px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #46045e;
+}
+a{
+  position: absolute;
+top: 67%;
+  left: 47%;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid #46045e;
+background-color: #fff;
+  color: #46045e;
+  outline: none;
+  font-size: 10px;
+}
+#light{
+  background-color: rgba(226, 216, 216, 0.479);
+}
+
+#dark{
+  background-color: #46045e ;
+
+  
+}
+input::placeholder{
+  font-size: 10px;
+}
+.toggler{
+  display: flex;
+  width: 100vw;
+  top: 79%;
+  height: 100px;
+left: 48%;
+  justify-content: center;
+  align-items: center;
+}
+label{
+  position: absolute;
+  font-size: 10px;
+  left: 1px;
+}
+#dark label{
+  color: #fff;
+}
